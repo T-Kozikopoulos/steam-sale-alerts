@@ -17,8 +17,7 @@ class Item(object):
         self.query = store.query
         self.tag_name2 = store.tag_name2
         self.query2 = store.query2
-#         self.price = None if price is None else price
-        self.price = self.load_price()
+        self.price = None if price is None else price
         self._id = uuid4().hex if _id is None else _id
 
     def __repr__(self):
@@ -30,13 +29,18 @@ class Item(object):
         soup = BeautifulSoup(content, "html.parser")
         try:
             element = soup.find(self.tag_name, self.query)
+            string_price = element.text.strip()
+            pattern = re.compile("([0-9]{1,2}([,.][0-9]{1,2}))")
+            match = pattern.search(string_price)
+            match = match.group().replace(',', '.')
+            self.price = float(match)
         except:
             element = soup.find(self.tag_name2, self.query2)
-        string_price = element.text.strip()
-        pattern = re.compile("([0-9]{1,2}([,.][0-9]{1,2}))")
-        match = pattern.search(string_price)
-        match = match.group().replace(',', '.')
-        self.price = float(match)
+            string_price = element.text.strip()
+            pattern = re.compile("([0-9]{1,2}([,.][0-9]{1,2}))")
+            match = pattern.search(string_price)
+            match = match.group().replace(',', '.')
+            self.price = float(match)
 
         return self.price
 
