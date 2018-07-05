@@ -1,0 +1,88 @@
+.form-size {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #111621 !important;
+    color: white !important;
+}
+
+.jumbotron {
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #05111d !important;
+/*     background-image: url("steam.jpg") !important; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white !important;
+}
+
+body {
+    background-color: #111621 !important;
+    color: white !important;
+}
+
+.navbar {
+    background-color: #05111d !important;
+    color: white !important;
+}
+
+.navbar-brand {
+    background-color: #05111d !important;
+    color: white !important;
+}
+.navbar-toggle {
+    background-color: #05111d !important;
+    color: white !important;
+}
+
+.glyphicon {
+    color: white !important;
+}
+
+a {
+    color: white !important;
+}
+
+.list-group-item-heading {
+    background-color: #05111d !important;
+    color: white !important;
+}
+
+.list-group-item {
+    background-color: #05111d !important;
+    color: white !important;
+}
+
+.panel {
+    background-color: #111621 !important;
+    color: white !important;
+}
+
+ol {
+    font-size:18px;
+}
+
+p {
+    font-size:18px;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+.btn-lg {
+    margin-left: 14%;
+    background-color: #111621 !important;
+    color: white !important;
+}
+
+.btn-alert {
+    margin-top: 1.5%;
+}
+
+
+.btn-alert {
+    background-color: #111621 !important;
+}

@@ -1,0 +1,16 @@
+{% extends "base.jinja2" %}
+{% block content %}
+<h2><strong>Steam Sale Alerts<br></strong></h2>
+<div class="jumbotron">
+    <ol>
+        <li>Click 'Create new alert'.</li>
+        <li>Enter the link to a game's Steam page.</li>
+        <li>Choose your budget.</li>
+        <li>You're done!</li>
+    </ol>
+    <p>As soon as a game is within your budget we'll immediately notify you via email,
+        so you will always be the first to know. Sign up and get started right away!</p>
+    <a class="btn btn-default btn-lg" href="{{ url_for('users.register_user') }}" role="button">Sign Up</a>
+    <a class="btn btn-default btn-lg" href="{{ url_for('users.login_user') }}" role="button">Log in</a>
+</div>
+{% endblock %}
