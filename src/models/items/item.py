@@ -17,7 +17,8 @@ class Item(object):
         self.query = store.query
         self.tag_name2 = store.tag_name2
         self.query2 = store.query2
-        self.price = None if price is None else price
+#         self.price = None if price is None else price
+        self.price = self.load_price() if price is None else price
         self._id = uuid4().hex if _id is None else _id
 
     def __repr__(self):
