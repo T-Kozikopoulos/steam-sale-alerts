@@ -1,0 +1,1 @@
+If a blueprint error occurs, downgrade Flask back to one of the 0.12 versions.
