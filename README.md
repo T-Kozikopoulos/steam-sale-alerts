@@ -1,7 +1,7 @@
 # steam-sale-alerts
 An app that notifies users when their favourite games go on sale.
 
-Visit the following link to make throwaway account and live demo the app yourself: [steam-sale-alerts.herokuapp.com](steam-sale-alerts.herokuapp.com).
+Visit the following link to make throwaway account and live demo the app yourself: steam-sale-alerts.herokuapp.com.
 
 Sign Up
 
